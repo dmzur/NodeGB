@@ -1,7 +1,8 @@
 const colors = require('colors');
 
-let firstNum = parseInt(process.argv[2]);
-let secondNum = parseInt(process.argv[3]);
+let [firstNum, secondNum] = process.argv.splice(2);
+// let firstNum = parseInt(process.argv[2]);
+// let secondNum = parseInt(process.argv[3]);
 let numStack = [];
 let steps = 0;
 
